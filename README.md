@@ -18,7 +18,7 @@ Este repositório documenta minha experiência ao configurar um ambiente de trei
 
 **📸 Imagem 1 — Criação do Resource Group no portal do Azure:**
  
-![Criação do Resource Group](imagens/resource-group.png)
+![Criação do Resource Group](Criação-do-Resource-Group-no-portal-do-Azur.png)
 2. Implantação dos Modelos
 Dentro do hub, acessei Modelos + Pontos de Extremidade.
 
@@ -28,12 +28,12 @@ gpt-4o
 
 text-embedding-3-large
 
-📸 Imagem 2 — Tela de implantação dos modelos:
+**📸 Imagem 2 — Tela de implantação dos modelos:**
 
 md
 Copiar
 Editar
-![Implantação dos modelos GPT](imagens/modelos-implantados.png)
+![Implantação dos modelos GPT](Tela-de-implantação-dos-modelos.png)
 3. Configuração do Playground e Upload de Dados
 Criei um Playground de Chat com o prompt inicial:
 
@@ -46,7 +46,7 @@ Carreguei arquivos em PDF com informações relevantes para os testes.
 md
 Copiar
 Editar
-![Configuração do Playground](imagens/playground-chat.png)
+![Configuração do Playground](Interface-do-Playground-com-o-prompt-configurado.png)
 4. Adição da Capacidade de Busca (Search)
 Criei um recurso Azure AI Search como deployment.
 
@@ -59,7 +59,7 @@ Isso permitiu que perguntas relacionadas ao conteúdo dos PDFs fossem respondida
 md
 Copiar
 Editar
-![Configuração do Azure AI Search](imagens/index-search.png)
+![Configuração do Azure AI Search](Configuração-de-índice-de-busca.png)
 5. Testes com IA Externa
 Usei um modelo externo para gerar perguntas sobre análise de redes sociais.
 
@@ -70,7 +70,7 @@ Encaminhei essas perguntas para a IA configurada no Azure e corrigi as respostas
 md
 Copiar
 Editar
-![Teste com IA externa](imagens/teste-pergunta-externa.png)
+![Teste com IA externa](Exemplo-de-interação-com-pergunta-gerada-externamente.png)
 🌐 Implantação do Chat como Aplicativo Web
 Problema: Provedor Microsoft.Web não registrado
 Durante a tentativa de implantação do aplicativo web, recebi a mensagem:
@@ -84,12 +84,6 @@ bash
 Copiar
 Editar
 az provider register --namespace Microsoft.Web
-📸 Imagem 6 — Comando no Azure CLI para registrar o provedor:
-
-md
-Copiar
-Editar
-![Registro do Microsoft.Web](imagens/cli-registro-microsoft-web.png)
 Escalonamento do App Service Plan
 Escalei o plano de serviço de app da camada Basic B1 para Basic B2 na categoria Dev/Test.
 
@@ -98,7 +92,7 @@ Escalei o plano de serviço de app da camada Basic B1 para Basic B2 na categoria
 md
 Copiar
 Editar
-![Escalonamento de App Service Plan](imagens/escalonamento-b1-b2.png)
+![Escalonamento de App Service Plan](Escalonamento-de-serviço-no-portal.png)
 ⚠️ Erro na Geração de Respostas do Web Chat
 Mesmo com a implantação bem-sucedida, o chat apresentou erro ao tentar gerar respostas:
 
