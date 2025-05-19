@@ -18,8 +18,9 @@ Este repositório documenta minha experiência ao configurar um ambiente de trei
 
 **📸 Imagem 1 — Criação do Resource Group no portal do Azure:**
  
-![Criação do Resource Group](Criação-do-Resource-Group-no-portal-do-Azur.png)
-2. Implantação dos Modelos
+![Criação do Resource Group](imagens/Criacao-do-Resource-Group-no-portal-do-Azur.png)
+
+### 2. Implantação dos Modelos
 Dentro do hub, acessei Modelos + Pontos de Extremidade.
 
 Implantei os seguintes modelos:
@@ -30,10 +31,7 @@ text-embedding-3-large
 
 **📸 Imagem 2 — Tela de implantação dos modelos:**
 
-md
-Copiar
-Editar
-![Implantação dos modelos GPT](Tela-de-implantação-dos-modelos.png)
+![Implantação dos modelos GPT](imagens/Tela-de-implantacao-dos-modelos.png)
 3. Configuração do Playground e Upload de Dados
 Criei um Playground de Chat com o prompt inicial:
 
@@ -41,12 +39,9 @@ Criei um Playground de Chat com o prompt inicial:
 
 Carreguei arquivos em PDF com informações relevantes para os testes.
 
-📸 Imagem 3 — Interface do Playground com o prompt configurado:
+**📸 Imagem 3 — Interface do Playground com o prompt configurado:**
 
-md
-Copiar
-Editar
-![Configuração do Playground](Interface-do-Playground-com-o-prompt-configurado.png)
+![Configuração do Playground](imagens/playground.png)
 4. Adição da Capacidade de Busca (Search)
 Criei um recurso Azure AI Search como deployment.
 
@@ -54,23 +49,18 @@ Configurei o índice e as opções de busca.
 
 Isso permitiu que perguntas relacionadas ao conteúdo dos PDFs fossem respondidas corretamente pela IA.
 
-📸 Imagem 4 — Configuração do índice de busca:
+**📸 Imagem 4 — Configuração do índice de busca:**
 
-md
-Copiar
-Editar
-![Configuração do Azure AI Search](Configuração-de-índice-de-busca.png)
+![Configuração do Azure AI Search](imagens/indice-de-bcaousca.png)
 5. Testes com IA Externa
 Usei um modelo externo para gerar perguntas sobre análise de redes sociais.
 
 Encaminhei essas perguntas para a IA configurada no Azure e corrigi as respostas utilizando a IA externa como referência.
 
-📸 Imagem 5 — Exemplo de interação com pergunta gerada externamente:
+**📸 Imagem 5 — Exemplo de interação com pergunta gerada externamente:**
 
-md
-Copiar
-Editar
-![Teste com IA externa](Exemplo-de-interação-com-pergunta-gerada-externamente.png)
+![Teste com IA externa](imagens/interacao.png)
+
 🌐 Implantação do Chat como Aplicativo Web
 Problema: Provedor Microsoft.Web não registrado
 Durante a tentativa de implantação do aplicativo web, recebi a mensagem:
@@ -80,19 +70,13 @@ Durante a tentativa de implantação do aplicativo web, recebi a mensagem:
 Solução:
 Registrei o provedor manualmente usando o CLI do Azure:
 
-bash
-Copiar
-Editar
 az provider register --namespace Microsoft.Web
 Escalonamento do App Service Plan
 Escalei o plano de serviço de app da camada Basic B1 para Basic B2 na categoria Dev/Test.
 
-📸 Imagem 7 — Escalonamento de serviço no portal:
+**📸 Imagem 6 — Escalonamento de serviço no portal:**
 
-md
-Copiar
-Editar
-![Escalonamento de App Service Plan](Escalonamento-de-serviço-no-portal.png)
+![Escalonamento de App Service Plan](imagens/Escalonamento-de-serviço-no-portal.png)
 ⚠️ Erro na Geração de Respostas do Web Chat
 Mesmo com a implantação bem-sucedida, o chat apresentou erro ao tentar gerar respostas:
 
